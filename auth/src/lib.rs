@@ -17,6 +17,10 @@ use wow_srp::server::SrpProof;
 
 mod packets;
 
+// TypeState pattern (https://yoric.github.io/post/rust-typestate/)
+/* struct ReceivedAuthLogonChallenge;
+struct Server */
+
 #[derive(PartialEq)]
 enum AuthState {
     // TODO: Use TypeState instead (https://yoric.github.io/post/rust-typestate/)
